@@ -1,0 +1,49 @@
+﻿@page
+@model SimpleShoppingSite.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "لیست محصولات";
+}
+
+<div class="address-bar">
+    <!-- <a href="Home.html" class="address-bar-item">Home</a>
+    <span class="address-bar-space">/</span>
+    <a class="address-bar-item">Products</a> -->
+</div>
+<section class="products-section">
+    <!-- <div class="products-filters"></div> -->
+    <div class="products-list-wrap">
+        <div class="products-list-text">
+            <span class="products-list-title" id="products-title">محصولات</span>
+        </div>
+        <ul class="products-list">
+            @foreach (var product in Model.Products)
+            {
+                <li class="products-list-item">
+                    <a asp-page="/Products/Detailes" asp-route-Id="@product.Id" class="products-list-item-link">
+                        <div class="products-list-item-img-wrap">
+                            <img class="products-list-item-img" src="img/product show cases/@product.ImageName" />
+                        </div>
+                        <div class="products-list-item-texts">
+                            <span class="products-list-item-texts-desc">@product.Title</span>
+                            <div class="products-list-item-texts-price-wrap">
+                                <span class="products-list-item-texts-price">@product.Price</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            }
+        </ul>
+        <div class="products-list-pagination-wrap">
+            <span id="maxPage" hidden>@Model.MaxPage</span>
+            <a id="leftBtn" class="products-list-pagination left-pagination">
+                <i class="products-list-pagination-icon left-pagination-icon fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="products-list-pagination-text" id="page-counter">صفحه 1/1</div>
+            <a id="rightBtn" class="products-list-pagination right-pagination">
+                <i class="products-list-pagination-icon right-pagination-icon fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="~/js/ProductPagination.js"></script>

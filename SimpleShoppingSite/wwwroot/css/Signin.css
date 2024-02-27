@@ -1,0 +1,140 @@
+.main-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.signin-wrap {
+    width: 35%;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.signin-title {
+    font-weight: bold;
+}
+
+.signin-form {
+    display: block;
+}
+
+.signin-form-input-text-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-form-input-text {
+    line-height: 2;
+    font-size: 1.1rem;
+    width: 25rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px #0000007a;
+    outline: none;
+
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+.signin-form-input-text:focus {
+    /* outline: solid #000 1px; */
+    box-shadow: 2px 2px #00000059;
+}
+
+.signin-form-input-submit-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.signin-form-resetPass {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.signin-form-input-submit {
+    border: none;
+    cursor: pointer;
+}
+
+.signin-form-btn {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    background-color: #383d5ab4;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: solid 1px #383d5ab4;
+
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+.signin-form-btn:hover {
+    background-color: #fff;
+    color: #383d5ab4;
+}
+
+/*#region minislider*/
+
+.miniSlider-wrap {
+    width: 65%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+.pagination-icon-btn {
+    background-color: transparent;
+    border: none;
+
+    line-height: 3;
+    font-size: 0.7rem;
+    padding: 0 0.2rem;
+    color: #fff;
+}
+
+.pointer-icon {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.slider-images {
+    display: flex;
+    align-items: center;
+}
+
+.slider-image-wrap {
+    display: block;
+    
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+}
+
+.slider-image {
+    display: block;
+}
+
+.slider-visible {
+    width: 100%;
+}
+
+.slider-hidden {
+    width: 0;
+}
+
+/*#endregion minislider*/

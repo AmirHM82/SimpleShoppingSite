@@ -1,0 +1,69 @@
+﻿@page
+@model SimpleShoppingSite.Pages.Products.DetailesModel
+@{
+    ViewData["Title"] = "جزئیات محصول";
+}
+
+<div class="address-bar">
+    <!-- <a href="Home.html" class="address-bar-item">Home</a>
+    <span class="address-bar-space">/</span>
+    <a class="address-bar-item">Products</a> -->
+    <!--This section works by js-->
+</div>
+<section>
+    <div class="Product-wrap">
+        <ul class="Product-imgs-wrap">
+            <li class="Product-img-wrap product-img-50">
+                <img src="img/product show cases/p5.jpg" class="product-img" />
+            </li>
+            <li class="Product-img-wrap product-img-50">
+                <img src="img/product show cases/p3.jpg" class="product-img" />
+            </li>
+            <li class="Product-img-wrap product-img-30">
+                <img src="img/product show cases/p2.jpg" class="product-img" />
+            </li>
+            <li class="Product-img-wrap product-img-30">
+                <img src="img/product show cases/p4.jpg" class="product-img" />
+            </li>
+            <li class="Product-img-wrap product-img-30">
+                <img src="img/product show cases/p1.jpg" class="product-img" />
+            </li>
+        </ul>
+        <div class="Product-content-wrap">
+            <div class="Product-content-text-wrap">
+                <span class="Product-content-text">محصول</span>
+                <div class="Product-content-price-wrap">
+                    <span class="Product-content-prev-price">30$</span>
+                    <span class="Product-content-offered-price">20$</span>
+                </div>
+                <div class="Product-content-description">
+                    <div class="Product-content-title-wrap" onclick="OpenDesc(0)">
+                        <span class="Product-content-title">توضیحات محصول</span>
+                        <i class="Product-content-title-icon fa-solid fa-plus"></i>
+                    </div>
+                    <div class="Product-content-description-text Product-content-showable Product-content-hidden">
+                        توضیحات مربوطه در این جا درج میگردد
+                    </div>
+                </div>
+                <div class="Product-content-payment">
+                    <div class="Product-content-title-wrap" onclick="OpenDesc(1)">
+                        <span class="Product-content-title">توضیحات پرداخت</span>
+                        <i class="Product-content-title-icon fa-solid fa-plus"></i>
+                    </div>
+                    <div class="Product-content-description-text Product-content-showable Product-content-hidden">
+                        توضیحات مربوطه در این جا درج میگردد
+                    </div>
+                </div>
+                <div class="Product-content-delivery">
+                    <div class="Product-content-title-wrap" onclick="OpenDesc(2)">
+                        <span class="Product-content-title">توضیحات ارسال/دریافت</span>
+                        <i class="Product-content-title-icon fa-solid fa-plus"></i>
+                    </div>
+                    <div class="Product-content-description-text Product-content-showable Product-content-hidden">
+                        توضیحات مربوطه در این جا درج میگردد
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

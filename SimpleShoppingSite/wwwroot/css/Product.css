@@ -1,0 +1,126 @@
+.Product-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.Product-imgs-wrap {
+    width: 70%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product-content-wrap {
+    width: 30%;
+}
+
+.product-img-50 {
+    width: 50%;
+}
+
+.product-img-30 {
+    width: 30%;
+}
+
+.Product-img-wrap {
+    overflow: hidden;
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.Product-content-text {
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Product-content-price-wrap {
+    line-height: 3;
+    font-size: 2rem;
+}
+
+.Product-content-title-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #000000cc;
+    padding: 0 1rem;
+    cursor: pointer !important;
+}
+
+.Product-content-title {
+    line-height: 2;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.Product-content-title-icon {
+    line-height: 2;
+    font-size: 1.7rem;
+}
+
+.Product-content-description-text {
+    display: block;
+    text-align: right;
+    line-height: 2;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+
+    transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+}
+
+.Product-content-visible {
+    max-height: 200px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.Product-content-hidden {
+    opacity: 0;
+    max-height: 0 !important;
+    visibility: hidden;
+}
+
+.Product-content-title-wrap:hover {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.Product-content-delivery {
+    line-height: 3;
+    font-size: 2rem;
+}
+
+.Product-content-payment {
+    line-height: 3;
+    font-size: 2rem;
+}
+
+.Product-content-text-wrap {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Product-content-text {
+    color: #000000cc;
+}
+
+.Product-content-prev-price {
+    padding: 0 1rem;
+    text-decoration: line-through;
+    color: #000000bd;
+}
+
+.Product-content-offered-price {
+    padding: 0 1rem;
+    font-weight: bold;
+}
