@@ -23,7 +23,7 @@ namespace SimpleShoppingSite.Pages.Products
             if (page < 1) 
                 page = 1;
             Products = productService.GetAllAsync(page, 5);
-            MaxPage = productService.Count() / 5;
+            MaxPage = (int)Math.Ceiling((double)productService.Count() / 5);
         }
     }
 }
